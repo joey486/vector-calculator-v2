@@ -1,0 +1,170 @@
+.vector-form {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1.2em 0.7em;
+  max-width: 800px;
+  margin: 1.2em auto;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #44515a;
+  font-size: 1.12em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28em;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.styled-button {
+  background-color: #e9ecf1;
+  color: #334d66;
+  border: none;
+  border-radius: 6px;
+  padding: 0.28em 0.8em;
+  font-size: 0.94em;
+  font-weight: 500;
+  transition: background 0.16s, transform 0.10s;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(50,90,120,0.04);
+}
+
+.styled-button:hover,
+.styled-button:focus {
+  background-color: #dbe1e8;
+  color: #253445;
+  transform: translateY(-1px) scale(1.025);
+  outline: none;
+}
+
+.toggle-btn {
+  background-color: #f8f7d9;
+  color: #45472e;
+}
+.toggle-btn:hover,
+.toggle-btn:focus {
+  background-color: #efedb1;
+}
+
+.clear-btn {
+  background-color: #fbecec;
+  color: #c55959;
+}
+.clear-btn:hover,
+.clear-btn:focus {
+  background-color: #f6d3d3;
+  color: #ae2e2e;
+}
+
+.draw-btn {
+  display: block;
+  margin: 0.7em auto 0 auto;
+  background: linear-gradient(90deg, #e0eafc 0%, #eaf6fb 100%);
+  color: #284476;
+  box-shadow: 0 2px 8px 0 rgba(130, 175, 255, 0.08);
+  font-size: 0.99em;
+  font-weight: 500;
+  padding: 0.39em 1em;
+}
+
+.vector-section {
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+#vectorForm .vector-inline-box,
+.vector-inline-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #c7ced3;
+  border-radius: 1.1em;
+  padding: 0.16em 0.65em;
+  font-size: 1em;
+  margin-bottom: 0.45em;
+  width: fit-content;
+  min-width: 120px;
+  box-shadow: 0 1px 5px #0001;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vectorForm .vector-inline-box .vector-paren,
+.vector-inline-box .vector-paren {
+  font-family: 'Cambria Math', Cambria, serif;
+  font-size: 1.07em;
+  color: #666;
+  margin: 0 0.07em;
+}
+
+#vectorForm .vector-inline-box .vector-comma,
+.vector-inline-box .vector-comma {
+  font-size: 1em;
+  margin: 0 0.13em;
+  color: #aaa;
+}
+
+#vectorForm .vector-inline-box .vector-mini-input,
+.vector-inline-box .vector-mini-input {
+  width: 1.7em !important;
+  border: none !important;
+  background: transparent !important;
+  font-size: 0.96em !important;
+  text-align: center !important;
+  outline: none !important;
+  margin: 0 0.02em !important;
+  appearance: textfield !important;
+  box-shadow: none !important;
+  color: #384150;
+}
+
+#vectorForm .vector-inline-box .vector-mini-input:focus,
+.vector-inline-box .vector-mini-input:focus {
+  background: #eef3f5 !important;
+}
+
+.result-text {
+  margin-top: 1em;
+  padding: 0.55em;
+  border-radius: 7px;
+  background: #f3f6fa;
+  color: #557199;
+  font-size: 0.97em;
+  font-weight: 500;
+  text-align: center;
+  min-height: 1.3em;
+}
+
+@media (max-width: 600px) {
+  .vector-form {
+      max-width: 97vw;
+      padding: 0.45em 0.15em;
+  }
+  .button-grid {
+      gap: 0.13em;
+  }
+  .vector-mini-input {
+      width: 1.25em;
+      font-size: 0.86em;
+  }
+}
+
+/* Remove spinner arrows for Chrome/Safari */
+#vectorForm .vector-mini-input::-webkit-outer-spin-button,
+#vectorForm .vector-mini-input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Remove spinner for Firefox */
+#vectorForm .vector-mini-input[type=number] {
+  -moz-appearance: textfield !important;
+}
