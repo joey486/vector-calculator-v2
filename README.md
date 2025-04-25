@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Vector Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application for performing vector calculations and visualizations in 2D and 3D space.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Vector Operations:**
+  - Addition (Sum)
+  - Subtraction
+  - Dot Product
+  - Cross Product (3D only)
+  - Angle between vectors
 
-### `npm start`
+- **Dynamic Visualization:**
+  - Real-time vector rendering
+  - Auto-scaling visualization
+  - Support for both 2D and 3D vectors
+  - Interactive canvas with axis labels
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Interface:**
+  - Clean, intuitive input form
+  - Toggle between 2D and 3D modes
+  - Clear button to reset inputs
+  - Visual feedback with cursor effects
+  - Responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+```sh
+git clone [<repository-url>](https://github.com/joey486/vector-calculator-v2.git)
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```sh
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```sh
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application will open in your default browser at `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Enter the components for Vector 1 and Vector 2 using the input fields
+2. Toggle between 2D and 3D modes using the "Switch to 2D/3D" button
+3. Select an operation (Sum, Subtract, Dot Product, etc.)
+4. View the result and the visual representation of the vectors
+5. Use the "Draw" button to update the visualization
+6. Clear all inputs using the "Clear" button
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js
+- HTML Canvas for vector visualization
+- CSS for styling and animations
+- JavaScript for vector calculations
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project structure is organized as follows:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `src/components/` - React components
+- `src/utils/` - Vector math calculations
+- `src/App.js` - Main application component
+- `src/index.js` - Application entry point
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
